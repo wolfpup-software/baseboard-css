@@ -40,12 +40,15 @@ h6 {
 	color: var(--h6-color);
 }
 
-code, pre, samp {
+code,
+pre,
+samp {
 	font: var(--code-font);
 	color: var(--code-color);
 }
 
-sub, sup {
+sub,
+sup {
 	font: var(--sup-font);
 	color: var(--sup-color);
 }
