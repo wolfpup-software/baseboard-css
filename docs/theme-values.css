@@ -1,0 +1,24 @@
+:root {
+	--line-height: 2.5rem;
+	--color: #121212;
+	--background: repeating-linear-gradient(#efefef, #efefef var(--line-height), #ffffff var(--line-height), #ffffff calc(var(--line-height) * 2));
+	--font: 1rem/var(--line-height) serif;
+	--h1-font: 1.8rem/var(--line-height) serif;
+	--h1-color: #212121;
+	--h2-font: 1.7rem/var(--line-height) serif;
+	--h2-color: #323232;
+	--h3-font: 1.6rem/var(--line-height) serif;
+	--h3-color: #433434;
+	--h4-font: 1.5rem/var(--line-height) serif;
+	--h4-color: #545454;
+	--h5-font: 1.4rem/var(--line-height) serif;
+	--h5-color: #656565;
+	--h6-font: 1.3rem/var(--line-height) serif;
+	--h6-color: #676767;
+	--code-font: 1rem/var(--line-height) monospace, monospace;
+	--code-color: #000000;
+	--sup-font: 0.8rem monospace, monospace;
+	--sup-color: #000000;
+	--table-font: 1rem/var(--line-height) monospace, monospace;
+	--table-color: #232323;
+}

@@ -1,0 +1,127 @@
+/*
+	Browser Concerns
+		
+	Record which properties are explicitly set in default styles for each browser.
+	Only record browsers and properties that are relative to the intention of baseboard.
+	- borders
+	- margins
+	- padding
+	- text-alignment
+	- list-styles
+
+	https://searchfox.org/mozilla-central/source/layout/style/res/html.css
+	https://github.com/WebKit/WebKit/blob/main/Source/WebCore/css/html.css
+	https://chromium.googlesource.com/chromium/blink/+/master/Source/core/css/html.css
+*/
+
+
+/* borders */
+
+/* border - moz */
+iframe, dialog {
+	border: 0;
+}
+/* border - webkit */
+iframe, fieldset  {
+	border: 0;
+}
+
+/* border - chromium */
+fieldset, input, textarea, select, iframe, dialog  {
+	border: 0;
+}
+
+/* padding */
+
+/* padding - moz */
+blockquote, td, th, ul, menu, dir, ol, dialog {
+	padding: 0;
+}
+
+/* padding - webkit */
+legend, fiedlset, ul, menu, dir, ol, textarea  {
+	padding: 0;
+}
+
+/* padding - chromium */
+ul, menu, dir, ol, input, textarea, option, dialog {
+	padding: 0;
+}
+
+/* margin */
+
+/* margin - moz */
+body, ul, menu, dir, ol, hr, dialog, p, dl, multicol, dd, blockquote, figure {
+	margin: 0;
+}
+
+/* margin - webkit */
+body, p, blockquote, figure, hr, ul, menu, dir, ol, dd, dl, fieldset, pre, xmp, plaintext, listing, input {
+	margin: 0;
+}
+
+/* margin - chromium */
+body, p, blockquote, figure, hr, ul, menu, dir, ol, dd, dl, fieldset, input {
+	margin: 0;
+}
+
+/* text-align */
+
+/* text-align - mozilla */
+caption, th {
+	text-align: start;
+}
+
+/* text-align - webkit */
+caption, th {
+	text-align: start;
+}
+
+/* text-align - chromium */
+caption {
+	text-align: start;
+}
+
+/* font-weight */
+
+/* font-weight - moz */
+th, h1 {
+	font-weight: normal;
+}
+
+/* font-weight - webkit */
+optgroup, h1, h1, h2, h3, h4, h5, h6, th {
+	font-weight: normal;
+}
+
+/* font-weight - chromium */
+h1, h2, h3, h4, h5, h6, th, optgroup {
+	font-weight: normal;
+}
+
+/* font-family */
+xmp, pre, plaintext, tt, code, kbd, samp {
+	font-family: monospace, monospace;
+}
+
+/* font-family - webkit */
+tt, code, kbd, samp, pre, xmp, plaintext, listing {
+	font-family: monospace, monospace;
+}
+	
+/* font-family - chromium */
+tt, code, kbd, samp, pre, xmp, plaintext, listing {
+	font-family: monospace, monospace;
+}
+
+/* font-weight - chromium */
+tt, code, kbd, samp, pre, xmp, plaintext, listing  {
+	font-family: monospace, monospace;
+}
+
+/* font-weight - chromium */
+h1, h2, h3, h4, h5, h6, th, optgroup {
+	font-weight: normal;
+}
+
+
