@@ -40,13 +40,15 @@ fieldset {
 	border: none;
 }
 
-menu,
-ol,
-ul {
-	list-style-type: none;
-}
-
 th,
 caption {
 	text-align: start;
+}
+
+ol,
+ul,
+menu,
+dir,
+summary {
+	list-style-type: none;
 }
