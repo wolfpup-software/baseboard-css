@@ -1,6 +1,6 @@
 # Baseboard-css
 
-Keep styles consistent between Firefox, Webkit, and Chromium browsers.
+Tiny reset stylesheet for Firefox, Webkit, and Chromium browsers.
 
 ## How to use
 
@@ -8,7 +8,7 @@ Copy `./baseboard.css` into a project.
 
 ## Applied styles
 
-`Baseboard` focuses on a small subset of css properties
+`Baseboard` changes a handful of css properties outside the responsibility of `layout` and `typography`.
 
 The following properties are resolved to their corresponding values on all elements:
 - `padding: 0`
@@ -27,19 +27,21 @@ This stylesheet is limited in scope and focused on a small set of properties. I 
 
 ### Why not typography?
 
-From experience, typography is assuemd to be styled eventually and whole-heartedly.
+From experience, typography is assumed to be styled eventually and wholeheartedly.
 
 Until then, I believe some visually significant correlation to `font-size` or `line-height` is more accessible than the absence of a correlation.
 
-### Why not wildcard selectors?
-
-The point of `baseboard` is to be targeted and concise. By their definition, wildcards have neither of those properties. 
-
-I believe wildcard selectors _do not_ take a performance hit worth avoiding their use. The `*` is pretty cool.
-
 ### Why not inputs?
 
-There are input element descrepenices between browsers that eventually spill into the responsibility of `typography` and `layout`.
+There differences between input elements across browsers eventually spill into the responsibility of `typography` and `layout`.
+
+Many vertical alignment pains stem from `line-height` and `font-size` properties.
+
+### Why not wildcard selectors?
+
+The point of `baseboard` is to be targeted and concise. Wildcards have neither of those properties. 
+
+I believe wildcard selectors _do not_ take a performance hit worth avoiding their use. The `*` is pretty cool.
 
 ## References
 
@@ -50,4 +52,4 @@ There are input element descrepenices between browsers that eventually spill int
 
 ## License
 
-Baseboard is released under the BSD 3-Clause License.
+`Baseboard-css` is released under the BSD 3-Clause License.
