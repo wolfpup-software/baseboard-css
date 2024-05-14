@@ -1,6 +1,7 @@
 blockquote,
 dialog,
 fiedlset,
+input,
 menu,
 ol,
 ul {
@@ -26,7 +27,9 @@ pre {
 
 legend,
 td,
-th {
+textarea,
+th,
+select {
 	padding: 0;
 }
 
